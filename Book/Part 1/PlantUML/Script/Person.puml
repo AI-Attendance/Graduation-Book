@@ -1,0 +1,13 @@
+@startuml
+class Person {
+  - string name
+  - float threshold
+  - vector<float> feature_vector
+  + string get_name()
+  + void set_name(string name)
+  + float get_threshold()
+  + void set_threshold(float threshold)
+  + vector<float> get_feature_vector()
+  + void set_feature_vector(vector<float> feature_vector)
+}
+@enduml

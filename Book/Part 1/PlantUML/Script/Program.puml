@@ -1,0 +1,37 @@
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+
+title Face Detection and Recognition Program
+
+participant "Main Loop" as ML
+participant "Face Detection" as FD
+participant "Face Recognition" as FR
+
+database "Detection Buffer" as DB
+database "Result Buffer" as RB
+database "Recognition Buffer" as RB2
+database "History Array" as HA
+
+ML -> ML : capture a frame
+ML -> DB : push the frame into detection buffer
+DB -> FD : retrieve the frame from detection buffer
+FD -> FD : run inference on the frame
+FD -> RB : push the result to the result buffer of detection
+RB -> ML : check if result buffer of detection have any items
+alt result buffer of detection have items
+ML -> ML : assign those frames to the tracker
+ML -> ML : retrieve all tracks from tracker and crop the frame with the boxes from tracker
+ML -> RB2 : push it to recognition buffer
+RB2 -> FR : retrieve the cropped frame from the recognition buffer
+FR -> FR : run inference on the cropped frame
+FR -> FR : call a function called search name
+FR -> HA : update the history array with the name of the recognized face
+HA -> ML : retrieve the names from history array
+ML -> ML : draw on the frame the boxes and write the names from history array
+else result buffer of detection have no items
+ML -> ML : do nothing
+end
+
+@enduml
+Received message. Thank you for explaining the program. Based on the search

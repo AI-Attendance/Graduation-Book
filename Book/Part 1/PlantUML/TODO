@@ -1,0 +1,24 @@
+Classes:
+  Person
+  PersonDatabase
+  Tracker
+  Buffer
+
+Sequence Diagram:
+  Main Program:
+    Main loop:
+      Capture
+      Tracker
+      Display
+    Detection:
+      Preprocessing
+      Inference
+      post processing
+    Recogntion:
+      Preprocessing
+      Inference
+      Post processing
+    Searching:
+
+
+  Register:

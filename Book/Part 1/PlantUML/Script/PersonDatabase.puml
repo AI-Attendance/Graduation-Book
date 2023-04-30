@@ -1,0 +1,9 @@
+@startuml
+class PersonDatabase {
+  - vector<Person> persons
+  + void add_person(Person person)
+  + vector<Person> get_persons()
+  + Person search(string name)
+  - void update_threshold()
+}
+@enduml

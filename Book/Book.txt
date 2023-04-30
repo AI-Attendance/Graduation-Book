@@ -1,0 +1,53 @@
+The book consist of 3 parts divided into chapters and sections and subsections:
+AI backend
+Web Application, data base
+Be at your disk
+
+A chapter should be long enough to present a single cohesive idea, step,
+    or argument fully, without over explaining it.
+A chapter should be short enough to keep the reader’s attention and interest
+
+1) Introduction
+Part 1)
+    1) Introduction
+    what do we want to do
+    programming language and why
+    AI models and why
+    FLow of program
+    Blocks
+
+    2) Program genral flow (PlantUML script with gpt)
+    deep understanding of program flow 
+    why this flow
+    how to improve the flow
+    drawing
+
+    3) Choise of AI models (options, choises)
+    
+    4) multithreading
+
+    5) building blocks
+    5.1) capture
+    5.2) tracking
+                https://github.com/yasenh/sort-cpp
+    5.2.1) algorithms avilable
+    5.2.2) choise and reason
+    5.2.3) impelementation
+    5.3) detection
+    5.4) recogniton on cpu 50ms
+                    on gpu 12ms
+                  https://github.com/davidsandberg/facenet
+                  https://github.com/serengil/deepface
+    5.6) Face Quiality
+                  https://github.com/javier-hernandezo/FaceQnet
+                  https://github.com/pterhoer/FaceImageQuality
+          threashold
+              https://sefiks.com/2020/05/22/fine-tuning-the-threshold-in-face-recognition/
+    5.7) search
+    5.8) display
+    
+Part 2)
+    1) Introduction
+
+Part 3)
+    1) Introduction
